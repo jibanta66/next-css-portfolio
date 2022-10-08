@@ -133,10 +133,10 @@ export default function Home() {
                 design theory.
               </p>
               <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
+              <p className="text-gray-800 py-1">css,scss,ttailwincss</p>
+              <p className="text-gray-800 py-1">framer-moyion</p>
               <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p></motion.button>
+              <p className="text-gray-800 py-1">ttailwincss</p></motion.button>
             </div>
             
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
@@ -152,11 +152,11 @@ export default function Home() {
                 Do you have an idea for your next great website? Lets make it a
                 reality.
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p></motion.button>
+              <h4 className="py-4 text-teal-600">Dependency Tools I Use</h4>
+              <p className="text-gray-800 py-1">next.js</p>
+              <p className="text-gray-800 py-1">react </p>
+              <p className="text-gray-800 py-1">react-icons</p>
+              <p className="text-gray-800 py-1">vercel</p></motion.button>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
             <motion.button
@@ -166,14 +166,13 @@ export default function Home() {
               <Image src={consulting} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 ">Consulting</h3>
               <p className="py-2">
-                Are you interested in feedback for your current project? I can
-                give you tips and tricks to level it up.
+                Are you interested in hire me for your current project? I will be interested in working with you.
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p></motion.button>
+              <h4 className="py-4 text-teal-600">My contacts</h4>
+              <p className="text-gray-800 py-1">linkedin</p>
+              <p className="text-gray-800 py-1">Gmail</p>
+              <p className="text-gray-800 py-1">Instagram</p>
+              <p className="text-gray-800 py-1">PhoneNo</p></motion.button>
             </div>
           </div>
         </section>
@@ -190,7 +189,7 @@ export default function Home() {
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               I offer from a wide range of services, including brand design,
-              programming and teaching.
+              programming.
             </p>
           </div>
           <div className="nav">
