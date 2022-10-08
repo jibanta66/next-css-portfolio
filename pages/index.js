@@ -193,6 +193,7 @@ export default function Home() {
               programming and teaching.
             </p>
           </div>
+          <div className="nav">
  <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
           <div className="basis-1/3 flex-1 ">  
           <div class="container">
@@ -299,6 +300,7 @@ export default function Home() {
           <Image className="rounded-lg object-cover"
                 layout="responsive"
                 src={web6}/></button>
+                </div>
                        </div>
                       </div>
             </div>

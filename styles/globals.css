@@ -8,8 +8,12 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --nav-load-time: 300ms;
 }
-
+nav{
+ 
+  animation: nav-load var(-- nav-load-time) ease-in;
+  }
 a {
   color: inherit;
   text-decoration: none;
