@@ -1,8 +1,9 @@
 import Head from "next/head";
+import { motion } from "framer-motion";
 import {
-  AiFillTwitterCircle,
+  AiFillGithub,
   AiFillLinkedin,
-  AiFillYoutube,
+  AiOutlineInstagram,
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
@@ -17,6 +18,7 @@ import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
+
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -51,20 +53,49 @@ export default function Home() {
           </nav>
           <div className="text-center p-10 py-10">
             <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
-              Dimitri Marco
-            </h2>
+              Jibanta Nrzary         </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
               Developer and designer.
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
               Freelancer providing services for programming and design content
-              needs. Join me down below and let's get cracking!
+              needs. Join me down below!
             </p>
+            
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <AiFillTwitterCircle />
-              <AiFillLinkedin />
-              <AiFillYoutube />
+           
+            <motion.button
+               whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                >
+
+           <a   href='https://github.com/jibanta66'
+                target='_blank'
+                rel='noreferrer'>
+                <AiFillGithub />
+          </a>
+           </motion.button>
+                
+              <motion.button
+               whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}>
+
+            <a   href='https://www.linkedin.com/in/jibanta-n-503264209/'
+                target='_blank'
+                rel='noreferrer'> 
+              <AiFillLinkedin /></a>
+              </motion.button>
+
+              <motion.button
+               whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }} >
+              <a   href='http://instagram.com/ronal.666?utm_source=qr'
+                target='_blank'
+                rel='noreferrer'>
+                <AiOutlineInstagram /></a>
+                </motion.button>
             </div>
+            
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
               <Image src={deved} layout="fill" objectFit="cover" />
             </div>
@@ -87,7 +118,12 @@ export default function Home() {
             </p>
           </div>
           <div className="lg:flex gap-10">
+         
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+              <motion.button
+               whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                  >
               <Image src={design} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2  ">
                 Beautiful Designs
@@ -100,9 +136,14 @@ export default function Home() {
               <p className="text-gray-800 py-1">Photoshop</p>
               <p className="text-gray-800 py-1">Illustrator</p>
               <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
+              <p className="text-gray-800 py-1">Indesign</p></motion.button>
             </div>
+            
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+            <motion.button
+               whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                  >
               <Image src={code} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 ">
                 Code your dream project
@@ -115,9 +156,13 @@ export default function Home() {
               <p className="text-gray-800 py-1">Photoshop</p>
               <p className="text-gray-800 py-1">Illustrator</p>
               <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
+              <p className="text-gray-800 py-1">Indesign</p></motion.button>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+            <motion.button
+               whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                  >
               <Image src={consulting} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 ">Consulting</h3>
               <p className="py-2">
@@ -128,7 +173,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">Photoshop</p>
               <p className="text-gray-800 py-1">Illustrator</p>
               <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
+              <p className="text-gray-800 py-1">Indesign</p></motion.button>
             </div>
           </div>
         </section>
@@ -148,60 +193,114 @@ export default function Home() {
               programming and teaching.
             </p>
           </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 ">
-              <Image
-                className="rounded-lg object-cover"
+ <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+          <div className="basis-1/3 flex-1 ">  
+          <div class="container">
+          <div class="button-container">
+          <span class="mask">
+             <Image className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                src={web1}
-              />
+                src={web1}/></span>
+
+        <button type="button" name="Hover">
+          
+          <Image className="rounded-lg object-cover"
+                layout="responsive"
+                src={web1}/></button>
+                       </div>
+                      </div>
+              </div>
+            <div className="basis-1/3 flex-1">
+            <div class="container">
+          <div class="button-container">
+          <span class="mask">
+        <Image className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={web2}/></span>
+
+        <button type="button" name="Hover">
+          
+          <Image className="rounded-lg object-cover"
+                layout="responsive"
+                src={web2}/></button>
+                       </div>
+                      </div>
             </div>
             <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
+            <div class="container">
+          <div class="button-container">
+          <span class="mask">
+        <Image className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                src={web2}
-              />
+                src={web3}/></span>
+
+        <button type="button" name="Hover">
+          
+          <Image className="rounded-lg object-cover"
+                layout="responsive"
+                src={web3}/></button>
+                       </div>
+                      </div>
+                      </div>
+            <div className="basis-1/3 flex-1">
+            <div class="container">
+          <div class="button-container">
+          <span class="mask">
+        <Image className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={web4}/></span>
+
+        <button type="button" name="Hover">
+          
+          <Image className="rounded-lg object-cover"
+                layout="responsive"
+                src={web4}/></button>
+                       </div>
+                      </div>
             </div>
             <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
+            <div class="container">
+          <div class="button-container">
+          <span class="mask">
+        <Image className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                src={web3}
-              />
+                src={web5}/></span>
+
+        <button type="button" name="Hover">
+          
+          <Image className="rounded-lg object-cover"
+                layout="responsive"
+                src={web5}/></button>
+                       </div>
+                      </div>
             </div>
             <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
+            <div class="container">
+          <div class="button-container">
+          <span class="mask">
+        <Image className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                src={web4}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
+                src={web6}/></span>
+
+        <button type="button" name="Hover">
+          
+          <Image className="rounded-lg object-cover"
                 layout="responsive"
-                src={web5}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web6}
-              />
+                src={web6}/></button>
+                       </div>
+                      </div>
             </div>
           </div>
         </section>
