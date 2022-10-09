@@ -18,11 +18,14 @@ import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
 
+import { Container } from "postcss";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
   return (
+  
+    
     <div className={darkMode ? "dark" : ""}>
       <Head>
         <title>Create Next App</title>
@@ -80,7 +83,7 @@ export default function Home() {
                 </motion.button>
             </div>
             
-            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
+            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-70 md:w-70">
               <Image src={deved} layout="fill" objectFit="cover" />
             </div>
           </div>
@@ -291,5 +294,6 @@ export default function Home() {
         </section>
       </main>
     </div>
+   
   );
 }
